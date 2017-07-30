@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Hardanger Quiz App</string>
+    <string name="name_header">Name:</string>
+    <string name="name_editText_hint">Your Name</string>
 </resources>
