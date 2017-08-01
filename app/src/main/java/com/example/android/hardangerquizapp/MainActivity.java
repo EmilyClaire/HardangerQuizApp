@@ -28,4 +28,27 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT)
                 .show();
     }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+
+        EditText editText = (EditText) findViewById(R.id.name);
+        String name = editText.getText().toString();
+
+        savedInstanceState.putString("name", name);
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        // Restore UI state from the savedInstanceState.
+        // This bundle has also been passed to onCreate.
+
+        EditText editText = (EditText) findViewById(R.id.name);
+        String name = savedInstanceState.getString("name");
+
+        editText.setText(name);
+    }
+
 }
