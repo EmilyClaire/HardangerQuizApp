@@ -70,40 +70,41 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/doves_eye_crop" />
 
-                <RadioGroup
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
                     android:layout_below="@id/question_1_text"
-                    android:layout_margin="8dp">
+                    android:orientation="vertical">
 
-                    <LinearLayout
+
+                    <RadioGroup
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="8dp">
 
                         <RadioButton
                             android:id="@+id/q_1_doves"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:onClick="scoreQuestion1"
                             android:text="@string/q_1_doves_eye" />
 
                         <RadioButton
                             android:id="@+id/q_1_eyelet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:onClick="scoreQuestion1"
                             android:text="@string/q_1_eyelet" />
 
                         <RadioButton
                             android:id="@+id/q_1_kloster"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:onClick="scoreQuestion1"
                             android:text="@string/q_1_kloster_block" />
-
-                    </LinearLayout>
-                </RadioGroup>
-
-
+                    </RadioGroup>
+                </LinearLayout>
             </RelativeLayout>
         </LinearLayout>
 
