@@ -3,4 +3,9 @@
     <string name="name_header">Name:</string>
     <string name="name_editText_hint">Your Name</string>
     <string name="submit">Submit</string>
+    <string name="question_1">This stitch is called a\\an?</string>
+    <string name="q_1_doves_eye">dove\'s eye</string>
+    <string name="q_1_eyelet">eyelet</string>
+    <string name="q_1_kloster_block">kloster block</string>
+    <string name="question_2">Hardanger is traditionally stitched using what color thread?</string>
 </resources>
